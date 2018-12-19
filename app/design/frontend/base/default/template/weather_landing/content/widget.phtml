@@ -1,0 +1,36 @@
+<script id="weather-landing-widget-tmpl" type="text/x-jquery-tmpl">
+    <div class="weather-widget">
+        <h2>${city}, ${country}</h2>
+        <h3>
+        <img src="${iconSrc}" alt="Weather ${city}, ${country}" width="50" height="50">
+        ${temp}
+        &#8451;
+        </h3>
+        <h3>Description: ${description}</h3>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <tbody>
+                    <tr>
+                        <td>Clouds</td><td>${clouds} %</td>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td><td>${humidity} %</td>
+                    </tr>
+                    <tr>
+                        <td>Wind</td><td>${wind} m/s</td>
+                    </tr>
+                    <tr>
+                        <td>Pressure</td><td>${pressure} hpa</td>
+                    </tr>
+                    <tr>
+                        <td>Sunrise</td><td>${sunrise}</td>
+                    </tr>
+                    <tr>
+                        <td>Sunset</td><td>${sunset}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</script>

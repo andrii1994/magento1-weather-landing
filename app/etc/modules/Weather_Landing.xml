@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Weather_Landing>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Weather_Landing>
+    </modules>
+</config>

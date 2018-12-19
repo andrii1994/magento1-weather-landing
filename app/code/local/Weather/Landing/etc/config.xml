@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <Weather_Landing>
+            <version>0.0.1</version>
+        </Weather_Landing>
+    </modules>
+    <global>
+        <helpers>
+            <landing>
+                <class>Weather_Landing_Helper</class>
+            </landing>
+        </helpers>
+        <resources>
+            <landing_setup>
+                <setup>
+                    <module>Weather_Landing</module>
+                </setup>
+            </landing_setup>
+        </resources>
+    </global>
+    <frontend>
+        <routers>
+            <landing>
+                <use>standard</use>
+                <args>
+                    <module>Weather_Landing</module>
+                    <frontName>landing</frontName>
+                </args>
+            </landing>
+        </routers>
+        <layout>
+            <updates>
+                <landing>
+                    <file>weather/landing.xml</file>
+                </landing>
+            </updates>
+        </layout>
+    </frontend>
+</config>
